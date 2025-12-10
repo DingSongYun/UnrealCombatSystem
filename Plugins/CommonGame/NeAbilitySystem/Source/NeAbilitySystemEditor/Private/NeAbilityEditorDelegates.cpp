@@ -1,0 +1,12 @@
+﻿// Copyright NetEase Games, Inc. All Rights Reserved.
+
+#include "NeAbilityEditorDelegates.h"
+
+FNeAbilityEditorDelegates::FPlayForPreviewDelegate FNeAbilityEditorDelegates::PlayForPreviewDelegate;
+FNeAbilityEditorDelegates::FAddNewSegmentDelegate FNeAbilityEditorDelegates::AddNewSegmentDelegate;
+FNeAbilityEditorDelegates::FDeleteSegmentDelegate FNeAbilityEditorDelegates::PreDeleteSegmentDelegate;
+FNeAbilityEditorDelegates::FMoveSegmentDelegate FNeAbilityEditorDelegates::MoveSegmentDelegate;
+FNeAbilityEditorDelegates::FSegmentSelectionChangedDelegate FNeAbilityEditorDelegates::SegmentSelectionChangedDelegate;
+FNeAbilityEditorDelegates::FOnCreatePreviewCameraDelegate FNeAbilityEditorDelegates::OnCreatePreviewCamera;
+FNeAbilityEditorDelegates::FBuildSegmentContextMenuDelegate FNeAbilityEditorDelegates::BuildSegmentContextMenuDelegate;
+FNeAbilityEditorDelegates::FDetailPropertyChangedDelegate FNeAbilityEditorDelegates::OnDetailPropertyChanged;
