@@ -96,7 +96,7 @@ TSharedRef<FEditorViewportClient> SNeAbilityEditorViewport::MakeEditorViewportCl
 	return NewViewportClient.ToSharedRef();
 }
 
-TSharedPtr<SWidget> SNeAbilityEditorViewport::MakeViewportToolbar()
+TSharedPtr<SWidget> SNeAbilityEditorViewport::BuildViewportToolbar()
 {
 	return SNew(SVerticalBox)
 	.Visibility( EVisibility::SelfHitTestInvisible )

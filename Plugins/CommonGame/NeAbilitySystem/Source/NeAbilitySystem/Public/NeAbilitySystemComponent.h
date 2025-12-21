@@ -203,7 +203,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Gameplay Tags")
 	bool UpdateGameplayTagCount(const FGameplayTag& Tag, const int32 CountDelta)
 	{
-		const bool Ret = GameplayTagCountContainer.UpdateTagCount(Tag, CountDelta);
+		bool Ret = GameplayTagCountContainer.UpdateTagCount(Tag, CountDelta, EGameplayTagReplicationState::TagAndCountToAll);
 		if (Ret)
 		{
 			OnTagUpdated(Tag, CountDelta > 0);
@@ -216,7 +216,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Gameplay Tags")
 	void UpdateGameplayTagContainer(const FGameplayTagContainer& Container, int32 CountDelta)
 	{
-		UpdateTagMap(Container, CountDelta);
+		UpdateTagMap(Container, CountDelta, EGameplayTagReplicationState::TagAndCountToAll);
 	}
 
 	/** Register delegate that is invoked whenever a tag is added or removed (but not if just count is increased. Only for 'new' and 'removed' events) */

@@ -1,0 +1,33 @@
+# Visual Studio
+.vs/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.vc.db
+*.vc.opendb
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.DotSettings.user
+
+# Unreal Engine
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+Build/
+
+# Plugins - Ignore generated files in plugins
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# OS
+.DS_Store
+Thumbs.db

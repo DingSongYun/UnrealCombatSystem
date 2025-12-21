@@ -67,7 +67,7 @@ TSharedRef<FEditorViewportClient> SNeSimpleEdViewport::MakeEditorViewportClient(
 	return ViewportClient.ToSharedRef();
 }
 
-TSharedPtr<SWidget> SNeSimpleEdViewport::MakeViewportToolbar()
+TSharedPtr<SWidget> SNeSimpleEdViewport::BuildViewportToolbar()
 {
 	return SAssignNew(ViewportToolbar, SViewportToolBar);
 }

@@ -1,6 +1,7 @@
-﻿// Copyright NetEase Games, Inc. All Rights Reserved.
+// Copyright NetEase Games, Inc. All Rights Reserved.
 
 #include "NeAbilityThumbnailRenderer.h"
+#include "SceneView.h"
 #include "ThumbnailRendering/SceneThumbnailInfo.h"
 #include "Animation/AnimSingleNodeInstance.h"
 #include "Animation/DebugSkelMeshComponent.h"
