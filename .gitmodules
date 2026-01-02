@@ -1,3 +1,4 @@
 [submodule "Plugins/ResKZ"]
 	path = Plugins/ResKZ
 	url = git@github.com:DingSongYun/ResKZ.git
+	branch = master
